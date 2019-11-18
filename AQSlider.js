@@ -1,9 +1,9 @@
 class Slider {
-	constructor() {
-		this.viewport = document.querySelector(".viewport");
-		this.container = document.querySelector(".slides");
-		this.slides = document.querySelectorAll(".slide-item");
-
+	constructor(args) {
+		this.viewport = document.querySelector("." + args.viewport);
+		this.container = document.querySelector("." + args.container);
+		this.slides = document.querySelectorAll("." + args.slideItem);
+		
 		this.index = 1;
 		this.Init ();
 	}
