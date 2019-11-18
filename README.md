@@ -1,18 +1,15 @@
 # AQSlider
 My Great and easy SLIDER on JS (ES6)
 <br>
-<br>
 1. Подключить JS файл (AQSlider.js)
 <br>
-<br>
-2. Инициализровать слайдер строкой кода 
+2. Инициализровать слайдер строкой кода <br>
     "var aqslider = new Slider({<br>
         viewport: "your-class",<br>
         container: "your-class",<br>
         slideItem: "your-class"<br>
-        );"<br>
-    // Классы без точки
-    <br>
+        });"<br>
+    // Классы без точки<br>
     <br>
 3. Список классов:<br>
     // Для нормальной работы слайдера нужны: <br>
