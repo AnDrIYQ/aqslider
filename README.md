@@ -8,6 +8,10 @@ My Great and easy SLIDER on JS (ES6)
     .viewport - Должен быть статичным блоком з обязательным CSS (overflow: hidden; position: relative;)
     .slides - Должен быть статичным блоком вложеным в .viewport, CSS (width: 100%; height: 100%; position: absolute; display: flex;)
     .slide-item - Блок елемент слайдера, вложеный в .slides, их может быть множество, в их должен быть CSS(flex-shrink: 0; width: 100%; display: flex;)
+    Для переключения слайдов по вашему событию есть методы : 
+        aqslider.next();
+        aqslider.prev();
+        // Максимально гибко.. Слайдер создан для тех кому нужно максимально гибко настроить слайдер и при этом не писать его логику
     // Остальные стили по желанию
     
    // Пример работы Слайдера
