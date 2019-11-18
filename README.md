@@ -12,28 +12,28 @@ My Great and easy SLIDER on JS (ES6)
     
    // Пример работы Слайдера
   
- <body>
-	<div class="viewport">
-		<div class="slides">
-			<div class="slide-item">
-				<h1>Content - 1</h1>
-			</div>
-			<div class="slide-item">
-				<h1>Content - 2</h1>
-			</div>
-			<div class="slide-item">
-				<h1>Content - 3</h1>
-			</div>
-			<div class="slide-item">
-				<h1>Content - 4</h1>
-			</div>
-			<div class="slide-item">
-				<h1>Content - 5</h1>
-			</div>
-		</div>
-	</div>
-    <script src="AQSlider.js"></script>
-    <script>
-      var aqslider = new Slider();
-    </script>
-	</body>
+// <body>
+//	<div class="viewport">
+//		<div class="slides">
+//			<div class="slide-item">
+//				<h1>Content - 1</h1>
+//			</div>
+//			<div class="slide-item">
+//				<h1>Content - 2</h1>
+//			</div>
+//			<div class="slide-item">
+//				<h1>Content - 3</h1>
+//			</div>
+//			<div class="slide-item">
+//				<h1>Content - 4</h1>
+//			</div>
+//			<div class="slide-item">
+//				<h1>Content - 5</h1>
+//			</div>
+//		</div>
+//	</div>
+//    <script src="AQSlider.js"></script>
+//    <script>
+//      var aqslider = new Slider();
+//    </script>
+//	</body>
