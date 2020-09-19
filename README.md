@@ -1,9 +1,9 @@
 # AQSlider
-My Great and easy SLIDER on JS (ES6)
+    My Great and easy SLIDER on JS (ES6)
 <br>
-1. Подключить JS файл (AQSlider.js)
+    1. Подключить JS файл (AQSlider.js)
 <br>
-2. Инициализровать слайдер строкой кода <br>
+    2. Инициализровать слайдер строкой кода <br>
     "var aqslider = new Slider({<br>
         viewport: "your-class",<br>
         container: "your-class",<br>
@@ -11,7 +11,7 @@ My Great and easy SLIDER on JS (ES6)
         });"<br>
     // Классы без точки<br>
     <br>
-3. Список классов:<br>
+    3. Список классов:<br>
     // Для нормальной работы слайдера нужны: <br>
     .viewport - Должен быть статичным блоком з обязательным CSS (overflow: hidden; position: relative;)<br>
     .container - Должен быть статичным блоком вложеным в .viewport, CSS (width: 100%; height: 100%; position: absolute; display: flex;)<br>
