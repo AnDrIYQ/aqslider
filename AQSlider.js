@@ -6,13 +6,14 @@ class AQSlider {
 		this.images = document.querySelectorAll("." + args.slideItem + " img");
 		this.btnPrev = document.querySelector(args.btnPrev);
 		this.btnNext = document.querySelector(args.btnNext);
+		
 		this.height = args.height;
-
-		this.setStyles();
-
 		this.index = 1;
+		
 		this.noSwipeTime = 5;
 		this.noClick = false;
+		
+		this.setStyles();
 		this.Init ();
 		this.setEvents();
 	}
@@ -32,13 +33,13 @@ class AQSlider {
 		this.container.style.position = "absolute";
 		this.container.style.width = "100%";
 		this.container.style.height = "100%";
-		// Slide-item
+		// Slide-items
 		this.slides.forEach((slide) => {
 			slide.style.flexShrink = "0";
 			slide.style.width = "100%";
 			slide.style.display = "flex";
 		})
-		// Slide-image
+		// Slide-images
 		this.images.forEach((image) => {
 			image.style.objectFit = "cover";
 			image.style.width = "100%";
