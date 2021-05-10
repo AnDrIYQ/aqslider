@@ -1,33 +1,37 @@
 # AQSlider
-    My Great and easy SLIDER on JS (ES6)
+    SLIDER on JS (ES6)
     
     1. Подключить JS файл (AQSlider.js)
-    2. Инициализровать слайдер строкой кода
     
+    HTML-структура для слайдера имеет следующий вид
     
-    <code>
-        var aqslider = new Slider({
-            viewport: "your-class",
-            container: "your-class",
-            slideItem: "your-class"
-        });
-    </code>
+    <div class="slider-viewport">
+        <button class="slider-btn" id="slider-prev">&lt;</button>
+        <div class="slider-container">
+            <div class="slider-item"><img src="image"></div> // 1
+            <div class="slider-item"><img src="image"></div> // 2
+            ...
+        </div>
+        <button class="slider-btn" id="slider-next">&gt;</button>
+    </div>
+    
+    // Стили для .slide-btn задаються вами
+    
+    2. Инициализировать слайдер следующим JS кодом: 
+    let slider = new AQSlider ({
+            // Классы без точки
+			viewport: 'slider-viewport',
+			container: 'slider-container',
+			slideItem: 'slider-item',
+			btnPrev: '#slider-prev', // Хэш-тэг обязателен
+			btnNext: '#slider-next', // Хэш-тэг обязателен
+			height: 'size-pixels' // Высота в пикселях
+	});
+    
+    Для переключения слайдов по вашему событию есть методы :
+    
+        slider.next();<br>
+        slider.prev();<br>
         
-    // Классы без точки
-    <br>
-    3. Список классов:<br>
-    // Для нормальной работы слайдера нужны: <br>
-    
-    .viewport - Должен быть статичным блоком з обязательным CSS (overflow: hidden; position: relative;)<br>
-    .container - Должен быть статичным блоком вложеным в .viewport, CSS (width: 100%; height: 100%; position: absolute; display: flex;)<br>
-    .slide-item - Блок елемент слайдера, вложеный в .slides, их может быть множество, в их должен быть CSS(flex-shrink: 0; width: 100%;v display: flex;)<br>
-    
-    Для переключения слайдов по вашему событию есть методы : <br>
-    
-        aqslider.next();<br>
-        aqslider.prev();<br>
-        
-        // Максимально гибко.. Слайдер создан для тех кому нужно максимально гибко настроить слайдер и при этом не писать его логику<br>
-        
-        // Остальные стили по желанию<br>
+    Остальные стили по желанию
    
